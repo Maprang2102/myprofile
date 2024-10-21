@@ -1,42 +1,120 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Main app */
+/* color */
+:root {
+  --bs-main:#1F2421;
+  --bs-secon:#216869;
+  --bs-green:#49A078;
+  --bs-ligth-green:#9CC5A1;
+  --bs-ligth:#DCE1DE;
+}
+/* end color */
+.header {
+  padding-top: 12px;
+  background: var(--bs-main);
+}
+
+.content {
+  margin:24px 16px;
+  padding: 20px;
+}
+.triger-btn {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color:#f0e5e7
+}
+/* Sider */
+.sider{
+  height: 100vh;
+  position: sticky !important;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.ant-layout-sider{
+  background: var(--bs-main) !important;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  color: var(--bs-green);
+  /* color: #4f6f52; */
+  margin: 30px 0;
+  font-size: 1.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-bar{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  background: var(--bs-main);
+}
+.ant-menu-item{
+  color: var(--bs-ligth) !important;
+}
+.ant-menu-item:hover {
+  color: var(--bs-ligth) !important;
+  border-color: var(--bs-ligth) !important;
+  background-color: var(--bs-green) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.ant-menu-item-selected{
+  background-color: var(--bs-secon) !important;
+  /* background-color: #4f6f52 !important; */
+  color: #fff !important;
 }
 
-.card {
-  padding: 2em;
+/* herder */
+.header-icon{
+  background: #d2e3c8;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: var(--bs-secon);
+  /* color: #4f6f52; */
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+/* button and color */
+.ant-btn:hover{
+  color: var(--bs-secon) !important;
+  border-color: var(--bs-secon) !important;
+  /* color: #4f6f52 !important;
+  border-color: #4f6f52 !important; */
+}
+.ant-btn-primary{
+  background-color: #8c9657;
+  /* background-color: #4f6f52; */
+}
+.ant-btn-primary:hover{
+  background-color: #173a1a !important;
+  color: #fff !important;
+}
+.primary--color{
+  color: #8c9657 !important;
+  /* color: #4f6f52 !important; */
+}
+.primary--light--color{
+  color: #739072 !important;
+}
+.secondary--color{
+  color: #86a789 !important;
+}
+.light--color{
+  color: #d2e3c8 !important;
+}
+.gray--color{
+  color: rgb(182, 181, 181) !important;
+}
+.content-name{
+  position: absolute;
+  color: #fff;
+  font-size: 100px;
+  top: 45%;
+  left: 589px;
+  font-family: 'Sov';
 }
