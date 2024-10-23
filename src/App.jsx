@@ -17,7 +17,7 @@ async function getCities(db) {
   const citiesCol = collection(db, 'users');
   const citySnapshot = await getDocs(citiesCol);
   const cityList = citySnapshot.docs.map(doc => doc.data());
-  console.log("test",cityList);
+  console.log("test111",cityList);
   return cityList;
 }
 
