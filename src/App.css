@@ -1,16 +1,17 @@
 /* Main app */
 /* color */
-:root {
-  --bs-main:#1F2421;
-  --bs-secon:#216869;
-  --bs-green:#49A078;
-  --bs-ligth-green:#9CC5A1;
+/* :root {
+  --bs-cream:#ECE0CA;
+  --bs-green:#A8BCB1;
+  --bs-brown:#654344;
+  --bs-late:#957461;
   --bs-ligth:#DCE1DE;
-}
+} */
 /* end color */
 .header {
   padding-top: 12px;
-  background: var(--bs-main);
+  background: var(--bs-cream);
+  z-index: 2;
 }
 
 .content {
@@ -36,7 +37,7 @@
 }
 
 .ant-layout-sider{
-  background: var(--bs-main) !important;
+  background: var(--bs-cream) !important;
 }
 
 .logo {
@@ -51,31 +52,31 @@
   flex-direction: column;
   gap: 10px;
   font-weight: 500;
-  background: var(--bs-main);
+  background: var(--bs-cream);
 }
 .ant-menu-item{
-  color: var(--bs-ligth) !important;
+  color: var(--bs-green) !important;
 }
 .ant-menu-item:hover {
-  color: var(--bs-ligth) !important;
-  border-color: var(--bs-ligth) !important;
-  background-color: var(--bs-green) !important;
+  color: var(--bs-green) !important;
+  border-color: var(--bs-green) !important;
+  background-color: var(--bs-brown) !important;
 }
 
 .ant-menu-item-selected{
-  background-color: var(--bs-secon) !important;
+  background-color: var(--bs-brown) !important;
   /* background-color: #4f6f52 !important; */
   color: #fff !important;
 }
 
 /* herder */
 .header-icon{
-  background: #d2e3c8;
+  background: var(--bs-brown);
   padding: 8px;
   border-radius: 4px;
   font-size: 15px;
-  color: var(--bs-secon);
-  /* color: #4f6f52; */
+  color: var(--bs-green);
+  /* color: var(--bs-green); */
   cursor: pointer;
 }
 
@@ -110,11 +111,15 @@
 .gray--color{
   color: rgb(182, 181, 181) !important;
 }
-.content-name{
+.border-box-brown{
+  border: var(--bs-brown) 2px solid;
   position: absolute;
-  color: #fff;
-  font-size: 100px;
-  top: 45%;
-  left: 589px;
-  font-family: 'Sov';
+  border-radius: 50px;
+  z-index: 1;
+}
+.border-box-late{
+  border: var(--bs-late) 2px solid;
+  position: absolute;
+  border-radius: 50px;
+  z-index: 1;
 }

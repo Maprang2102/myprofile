@@ -1,6 +1,6 @@
 import { Button, Card, Col, Flex, Image, Typography } from "antd";
 import React from "react";
-import img1 from "../assets/img01.jpg";
+import img1 from "../assets/img/img01.jpg";
 
 const Banner = () => {
   return (

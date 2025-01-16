@@ -6,6 +6,7 @@ import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import CustomHeader from "./components/Header";
 import MainContent from "./components/MainContent";
 import SideContent from "./components/SideContent";
+import { Link } from "react-router-dom";
 
 import { getFirestore,collection,getDocs } from "firebase/firestore";
 import db from "./configDatabase";
@@ -25,7 +26,7 @@ const { Sider, Header, Content } = Layout;
 const App = () => {
   const [collapsed, setcollapsed] = useState(false);
   return (
-    <Layout>
+    <Layout style={{background:'none'}}>
       {/* <Sider
         // theme="light"
         trigger={null}
@@ -50,16 +51,12 @@ const App = () => {
           className="triger-btn"
         ></Button>
       </Sider> */}
-      <Layout>
-        {/* <Header className="header">
+      <Layout style={{background:'none'}}>
+        <Header className="header">
           <CustomHeader/>
-        </Header> */}
-            <MainContent/>
-        {/* <Content className="content">
-          <Col gap="large" flex="auto">
-             <SideContent /> 
-          </Col>
-        </Content> */}
+        </Header>
+            {/* <MainContent/> */}
+
       </Layout>
     </Layout>
   );

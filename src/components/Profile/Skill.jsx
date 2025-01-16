@@ -2,7 +2,11 @@ import React from 'react'
 
 const Skill = () => {
   return (
-    <div>Skill <br/>
+    <div className='contant-box'>
+      <div className="border-box-late" style={{width:'100%',height:'100%',top:'5px',left:'5px'}} ></div>
+      <div className="border-box-brown p-3" style={{width:'100%',height:'100%',top:'0px',left:'-5px'}}></div>
+      <span>Skill </span>
+      <br />
         <ul>
             <li>HTML, CSS, Javascript</li>
             <li>React.js Node.js</li>

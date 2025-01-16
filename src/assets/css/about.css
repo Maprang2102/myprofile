@@ -1,0 +1,67 @@
+.head-aboutme{
+    width: 80%;
+    height: 60vh;
+    position: relative;
+    top: -10vh;
+}
+.aboutme-img{
+    object-fit:cover;
+    border-radius: 50px;
+}
+.content-name{
+    position: absolute;
+    color: #fff;
+    font-size: 100px;
+    top: 45%;
+    left: 70%;
+    font-family: 'Sov';
+    z-index: 3;
+}
+.contant-box{
+    position: relative;
+    background: #fff;
+    border-radius: 50px;
+    width: 70%;
+    display: flex;
+    left: auto;
+    right: -25%;
+    padding: 30px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.menu-balloon{
+    width: 40px;
+    height: auto;
+    padding: 20px 10px;
+    position: sticky;
+    top: 20%;
+    left: 10%;
+    background: var(--bs-late);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-balloon{
+    color:var(--bs-cream);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px 3px;
+}
+.btn-balloon:hover :active{
+    background-color: var(--bs-cream);
+    color: var(--bs-brown);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content-data{
+    width: 70%;
+}
