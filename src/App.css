@@ -8,16 +8,13 @@
   --bs-ligth:#DCE1DE;
 } */
 /* end color */
-.header {
+.navbar {
   padding-top: 12px;
   background: var(--bs-cream);
-  z-index: 2;
+  z-index: 5;
+  position: relative;
 }
 
-.content {
-  margin:24px 16px;
-  padding: 20px;
-}
 .triger-btn {
   font-size: 16px;
   width: 50px;

@@ -40,19 +40,25 @@ const Profile = () => {
       </Flex>
       <div className="content">
       <div className="menu-balloon">
+        <div className="btn-balloon">
+          <a href="#home">
+          <HomeFilled />
+          </a>
+        </div>
+        <div className="btn-balloon">
+        <a href="#skill">
+          <IdcardFilled />
+          </a>
+        </div>
+        <div className="btn-balloon">
+        <a href="#experince">
+          <FolderOpenFilled />
+          </a>
+        </div>
         <div
           className="border-box-brown p-3"
           style={{ width: "100%", height: "100%", top: "0px", left: "-7px" }}
         ></div>
-        <div className="btn-balloon">
-          <HomeFilled />
-        </div>
-        <div className="btn-balloon">
-          <IdcardFilled />
-        </div>
-        <div className="btn-balloon">
-          <FolderOpenFilled />
-        </div>
       </div>
       <div className="content-data">
       <Information />

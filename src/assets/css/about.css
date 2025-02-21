@@ -2,7 +2,7 @@
     width: 80%;
     height: 60vh;
     position: relative;
-    top: -10vh;
+    top: -8vh;
 }
 .aboutme-img{
     object-fit:cover;
@@ -21,21 +21,30 @@
     position: relative;
     background: #fff;
     border-radius: 50px;
-    width: 70%;
-    display: flex;
+    width: 85%;
     left: auto;
-    right: -25%;
-    padding: 30px;
+    right: -10%;
+    padding: 30px 40px;
     font-size: 20px;
-    margin: 20px 0;
+    margin: 50px 0;
+    list-style-position: inside;
 }
+.contant-box li {
+    padding-left: 1.25rem;
+    position: relative;
+  }
+  
+  li::before {
+    left: 0;
+    position: absolute;
+  }
 .menu-balloon{
     width: 40px;
-    height: auto;
+    height: 13rem;
     padding: 20px 10px;
     position: sticky;
     top: 20%;
-    left: 10%;
+    left: 3%;
     background: var(--bs-late);
     border-radius: 50px;
     display: flex;
@@ -49,12 +58,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    height: 45px; 
+    width: 45px;
+    border-radius: 10px;
     margin: 5px 3px;
+    z-index: 2;
 }
-.btn-balloon:hover :active{
+.btn-balloon a{
+    color:var(--bs-cream);
+    text-decoration: none;
+    font-size: 30px;
+}
+.btn-balloon:hover {
+    background-color: var(--bs-cream);
+    color: var(--bs-brown);
+    border-radius: 10px;
+}
+.btn-balloon a:hover {
     background-color: var(--bs-cream);
     color: var(--bs-brown);
 }
@@ -63,5 +83,5 @@
     justify-content: space-between;
 }
 .content-data{
-    width: 70%;
+    width: 100%;
 }

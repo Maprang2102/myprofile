@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import ErrorPage from './Error.jsx';
 import TestPage from './components/testPage.jsx'
-import Sidebar from './components/Sidebar.jsx';
+import Sidebar from './components/Header.jsx';
 import Test101 from './components/test101.jsx';
 import Profile from './components/Profile.jsx';
 import { ConfigProvider } from 'antd';
@@ -34,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <ConfigProvider locale={thTH} theme={{ hashed: false }}>
     {/* <App /> */}
+    <Sidebar/>
     </ConfigProvider>
     </BrowserRouter>
     <RouterProvider router={router} />

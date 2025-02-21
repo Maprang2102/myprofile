@@ -5,7 +5,7 @@ import React from 'react'
 
 const CustomHeader = () => {
   return (
-    <Flex align='center' justify='space-between'>
+    <Flex className='navbar' align='center' justify='space-between'>
         <Typography.Title level={3} type='secondary'>
             Welcome back ,Prang
         </Typography.Title>
